@@ -2,7 +2,7 @@ import { FaGoogle } from "react-icons/fa";
 const Login = () => {
     const authenticateViaOAuth = async (method) => {
       try {
-        window.location.href = `${import.meta.env.VITE_SERVER_BASE_URL}/api/auth/${method}`;
+        window.location.href = `${import.meta.env.VITE_AUTH_SERVER_BASE_URL}/auth/${method}`;
       } catch (error) {
         console.error(error);
       }

@@ -5,7 +5,8 @@ import { Navigate } from "react-router-dom";
 
 
 const ProtectedRoute = ({ children }) => {
-  const token = Cookies.get("access_token"); 
+  const token = Cookies.get('access_token') || '';
+  console.log("Inside protected route",token);
   return token ? children : <Navigate to="/login" />;
 };
 

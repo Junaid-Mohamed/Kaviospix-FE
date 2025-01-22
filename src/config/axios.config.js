@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: `https://memories-be-xi.vercel.app`,
+    baseURL: `${import.meta.env.VITE_SERVER_BASE_URL}`,
     withCredentials: true,
 });
 

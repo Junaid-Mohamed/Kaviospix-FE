@@ -2,7 +2,7 @@ import { FaGoogle } from "react-icons/fa";
 const Login = () => {
     const authenticateViaOAuth = async (method) => {
       try {
-        window.location.href = `${import.meta.env.VITE_SERVER_BASE_URL}/api/auth/${method}`;
+        window.location.href = `https://memories-be-xi.vercel.app/api/auth/${method}`;
       } catch (error) {
         console.error(error);
       }
